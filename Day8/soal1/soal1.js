@@ -19,7 +19,7 @@
 let nums = [1,0,2,1,4]
 let temp = 0
 
-function checker (number){
+function checker(number){
     
     if(nums[temp]> nums.length-1) {
        return console.log(false)
