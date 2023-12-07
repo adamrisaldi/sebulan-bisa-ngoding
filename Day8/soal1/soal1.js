@@ -15,12 +15,12 @@
 //         result = false;
 //     }
 // console.log(result);
+//--------------------------------------------------------------------------
 
 let nums = [1,0,2,1,4]
 let temp = 0
 
-function checker(number){
-    
+function checker(number) {   
     if(nums[temp]> nums.length-1) {
        return console.log(false)
     } else if(temp > nums.length-1) {
@@ -28,13 +28,11 @@ function checker(number){
     } else if(nums[temp] < nums.length-1) {
         if(nums[temp] === 0){
             return console.log(false) 
-         }
-       temp = nums[temp]+ nums[nums[temp]]
-       checker(temp)
-    }
-    else {
+        }
+        temp = nums[temp]+ nums[nums[temp]]
+        checker(temp)
+    } else {
        return console.log(true)
     }
 }
-
 checker(0)
